@@ -1,0 +1,74 @@
+// main: ../main.scss
+.comment-section {
+    // @include padding(_size(section-spacing), _size(section-spacing));
+    // background: _palette(bg);
+    // border: solid 1px _palette(border);
+    // margin: 0 0 _size(section-spacing) 0;
+    // position: relative;
+    
+    > header {
+        border-bottom: solid 1px _palette(border);
+        padding-left: _size(section-spacing);
+        h2 {
+            font-weight: _font(weight-heading-extrabold);
+            font-size: 1.5em;
+        }
+        // left: (_size(section-spacing) * -1);
+        // margin: (_size(section-spacing) * -1) 0 _size(section-spacing) 0;
+        // position: relative;
+        // width: calc(100% + #{_size(section-spacing) * 2});
+        // width: calc(100% + #{_size(section-spacing) * 2});
+    }
+    > form {
+        padding: _size(element-margin) 0;
+        border-bottom: solid 1px _palette(border);
+        * {
+            margin-bottom: _size(element-margin);
+        }
+        :last-child {
+            margin-bottom: 0;
+        }
+    }
+    > ul.comments {
+		list-style: none;
+        padding: 0;
+        
+        // li {
+        //     @include vendor('display', 'flex');
+        //     @include vendor('align-items', 'flex-start');
+        //     @include vendor('flex-direction', 'row-reverse');
+		// 	border-top: dotted 1px _palette(border);
+		// 	margin: (_size(element-margin) * 0.75) 0 0 0;
+		// 	padding: (_size(element-margin) * 0.75) 0 0 0;
+
+		// 	&:first-child {
+		// 		border-top: 0;
+		// 		margin-top: 0;
+		// 		padding-top: 0;
+		// 	}
+
+        //     > header {
+        //         @include vendor('flex-grow', '1');
+        //         -ms-flex: 1;
+    
+        //         h3 {
+        //             font-size: 0.7em;
+        //             margin-top: 0.125em;
+        //         }
+        //         .published {
+        //             display: block;
+        //             font-family: _font(family-heading);
+        //             font-size: 0.6em;
+        //             font-weight: _font(weight-heading);
+        //             letter-spacing: _font(kerning-heading);
+        //             margin: -0.625em 0 (_size(element-margin) * 0.85) 0;
+        //             text-transform: uppercase;
+        //         }
+
+        //         > :last-child {
+        //             margin-bottom: 0;
+        //         }
+        //     }
+        // }
+    }
+}

@@ -1,0 +1,6 @@
+// main: ../main.scss
+.wrapper > .comment-section { // Changed by me
+    @include vendor('flex-grow', '1');
+    -ms-flex: 1;
+    width: 100%;
+}
